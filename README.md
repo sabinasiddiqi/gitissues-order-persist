@@ -8,13 +8,15 @@ Login to your github account and follow the instructions [here](https://github.c
 
 # Build and start demo
 
+Open a terminal window and type the following commands in the shell:
+
 ```sh
 cd my-app
 npm install
 npm start
 ```
 
-You should now be able to view the application in your browser [here](http://localhost:3000/)
+You should now be able to view the application in your browser [here](http://localhost:3000/) - at localhost port 3000.
 
 To use the application, enter the github token you generated and press "Go" to view a list of your repositories.
 
