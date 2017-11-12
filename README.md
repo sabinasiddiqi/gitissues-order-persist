@@ -20,4 +20,9 @@ You should now be able to view the application in your browser [here](http://loc
 
 To use the application, enter the github token you generated and press "Go" to view a list of your repositories.
 
-When you click on one of your repositories you should be able to view the open issues for that repository. You should also be able to rearrange them. 
+When you click on one of your repositories you should be able to view the open issues for that repository. You should also be able to rearrange them.
+
+## To persisting issues order on backend
+
+- Add a column for rank to your table/collection
+- In the moveCard method in IssuesList make an api request to update the ranking for each issue. Instead of just reordering the array, also keep track of rank item and sort the display based on the rank value. 

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import Button from 'react-toolbox/lib/button/Button'
+import RaisedButton from 'material-ui/RaisedButton';
+
 import Input from 'react-toolbox/lib/input/Input'
 import ReposList from './ReposList'
 
@@ -46,8 +47,15 @@ class Login extends Component {
 
     return (<div>
         { !login && <form>
-          <Input type="text" value={key} onChange={this.handleChange} error={error}></Input>
-          <Button label="Go" onClick={this.handleSubmit} className="mui-btn mui-btn--primary mui-btn--raised"></Button>
+          <div className="Container">
+
+            <Input type="text" value={key} onChange={this.handleChange} error={error}></Input>
+          </div>
+          {/* <Button label="Go" onClick={this.handleSubmit} className="mui-btn mui-btn--primary mui-btn--raised"></Button> */}
+          <div className="Container">
+            <RaisedButton onClick={this.handleSubmit} primary={true} label="Go" />
+          </div>
+
         </form> }
         { login && <ReposList key={key} login={login} ></ReposList> }
       </div>
