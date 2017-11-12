@@ -1,12 +1,12 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-## Instructions on running demo
+# Instructions on running demo
 
-# Generate a github token
+## Generate a github token
 
 Login to your github account and follow the instructions [here](https://github.com/settings/tokens/new)
 
-# Build and start demo
+## Build and start demo
 
 Open a terminal window and type the following commands in the shell:
 
