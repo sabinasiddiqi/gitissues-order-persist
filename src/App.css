@@ -1,0 +1,30 @@
+.App {
+  text-align: left;
+}
+
+.Body,
+.Container {
+  padding: 1em;
+}
+
+.App-header {
+  background-color: #222;
+  height: 60px;
+  padding: 5px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+}

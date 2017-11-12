@@ -1,0 +1,33 @@
+.ReposList {
+  width: 80%;
+  height: 200px;
+  margin: auto;
+  padding: 10px;
+}
+
+.ReposList .Left {
+  width: 15%;
+  height: 200px;
+  float: left;
+}
+.ReposList .Right {
+  margin-left: 15%;
+  padding-top: .2em;
+  height: 200px;
+}
+
+.ReposList li {
+  display: block;
+}
+
+.RepoListItem {
+  margin-right: 1.5em;
+  padding: .3em;
+}
+.RepoListItem:hover {
+  color: #0366d6 !important;
+}
+
+.RepoListItem.selected {
+  background-color: lightgrey;
+}
