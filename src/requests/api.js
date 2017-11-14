@@ -5,15 +5,16 @@ export const getUser = async (key) => {
 }
 export const getRepos = async () => {
   const key = window.sessionStorage.getItem('key')
-  // return await apiFetch(`${API_PATH}user/repos?access_token=${key}`)
-  let url = 'users/goodbotai/repos'
-  return await apiFetch(`${API_PATH}${url}`)
+  return await apiFetch(`${API_PATH}user/repos?access_token=${key}`)
+  // let url = 'users/goodbotai/repos'
+  // return await apiFetch(`${API_PATH}${url}`)
 }
 
 export const getIssues = async (repo) => {
   const key = window.sessionStorage.getItem('key'),
     user = window.sessionStorage.getItem('login')
-  // return await apiFetch(`${API_PATH}repos/${user}/${repo}/issues?access_token=${key}`)
-  let url = `repos/goodbotai/${repo}/issues?state=closed`
-  return await apiFetch(`${API_PATH}${url}`)
+  return await apiFetch(`${API_PATH}repos/${user}/${repo}/issues?access_token=${key}`)
+  // used this to get sample data if you don't have issues in your repo
+  // let url = `repos/goodbotai/${repo}/issues?state=closed` 
+  // return await apiFetch(`${API_PATH}${url}`)
 }
