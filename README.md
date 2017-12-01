@@ -11,7 +11,7 @@ Login to your github account and follow the instructions [here](https://github.c
 Open a terminal window and type the following commands in the shell:
 
 ```sh
-cd my-app
+cd gitissues-order-persist
 npm install
 npm start
 ```
